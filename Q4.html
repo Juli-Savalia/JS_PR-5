@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+
+<body>
+    <!-- find duplicate element in array.. -->
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter the size of an array :-"));
+        var arr = [];
+        for (var i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Enter the value of an array :-"));
+        }
+
+        console.log(arr);
+        console.log("Duplicate elements are :-");
+
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    console.log(arr[i]);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

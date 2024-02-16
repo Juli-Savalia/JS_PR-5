@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <!-- delete element in arry position wise. -->
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter the size of an array :-"));
+        var arr =[];
+        for(var i=0;i<n;i++)
+        {
+         arr[i] = parseInt(prompt("Enter the value of an array :-"));
+        }
+        
+        console.log(arr);
+        console.log("delete element in arry position wise :-");
+
+        let value = 15
+        let pos = 3;
+
+        for(var i = pos ; i<arr.length -1; i++)
+        {
+            arr[i] = arr[i+1];
+        }
+        arr.length = arr.length -1 ;
+        console.log(arr);
+    </script>
+</body>
+</html>l

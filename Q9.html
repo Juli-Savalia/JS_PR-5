@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+
+<body>
+    <!-- search array elemet using for loop. -->
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter the size of an array :-"));
+        arr =[];
+        for (var i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Enter the value of an array :-"));
+        }
+
+        console.log(arr);
+
+        var search = parseInt(prompt("Enter the elemnts you want to search :-"));
+
+        for (var i = 0; i < arr.length; i++) {
+            var check;
+            if (arr[i] == search) {
+                check = 1;
+            }
+        }
+
+        if (check == 1) {
+            console.log("Your searched elements are :- " + search);
+        }
+        else {
+            console.log("not found");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+</head>
+
+<body>
+    <!--array ascending  order sort. -->
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter the size of an array :-"));
+        arr = [];
+        for (var i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Enter the value of an array :-"));
+        }
+
+        console.log(arr);
+        console.log("Your descending arr elements are :-");
+        for(i=0;i<arr.length;i++)
+        {
+            for(var j=i+1;j<arr.length;j++)
+            {
+                var temp;
+                if(arr[i] < arr[j])
+                {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>
